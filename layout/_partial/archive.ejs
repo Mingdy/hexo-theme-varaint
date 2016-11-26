@@ -11,10 +11,10 @@
           </div>-->
         <li class="post">
           <%if(!i){%>
-            <i class="post-status iconfont icon-icon"></i>  
+            <i class="post-status iconfont icon-icon"></i>
           <%}%>
           <h2 class="no-background"  >
-            <span><a href="<%- url_for(post.path) %>"><%= post.title %></a></span>
+            <span><a href="<%- url_for(post.path) %>" title="<%= post.title %>"><%= post.title %></a></span>
             <%- partial('_widget/date',{post: post,class_name: 'post-time',date_format: null}) %>
           </h2>
         </li>
